@@ -1,0 +1,58 @@
+[
+    {
+        "model": "goods.categories",
+        "pk": 4,
+        "fields": {
+            "name": "ყველა პროდუქტი",
+            "slug": "yvela-produqti"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 5,
+        "fields": {
+            "name": "სამზარეულო",
+            "slug": "samzareulo"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 6,
+        "fields": {
+            "name": "საძინებელი",
+            "slug": "sadzinebeli"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 7,
+        "fields": {
+            "name": "Მისაღები ოთახი",
+            "slug": "isagebi-otaxi"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 8,
+        "fields": {
+            "name": "ოფისი",
+            "slug": "ofisi"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 9,
+        "fields": {
+            "name": "აქსესუარები",
+            "slug": "aqsesuarebi"
+        }
+    },
+    {
+        "model": "goods.categories",
+        "pk": 10,
+        "fields": {
+            "name": "დეკორი",
+            "slug": "dekori"
+        }
+    }
+]

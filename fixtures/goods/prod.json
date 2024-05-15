@@ -1,0 +1,170 @@
+[
+    {
+        "model": "goods.products",
+        "pk": 1,
+        "fields": {
+            "name": "ჩაის მაგიდა და სამი სკამი",
+            "slug": "chais-magida-da-sami-skami",
+            "description": "სამი სკამის კომპლექტი და დიზაინერი მაგიდა მისაღები ოთახისთვის.",
+            "image": "",
+            "price": "150.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 2,
+        "fields": {
+            "name": "ჩაის მაგიდა და ორი სკამი",
+            "slug": "chais-magida-da-ori-skami",
+            "description": "მაგიდის და ორი სკამის კომპლექტი მინიმალისტურ სტილში.",
+            "image": "",
+            "price": "93.00",
+            "discount": "0.00",
+            "quantity": 0,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 3,
+        "fields": {
+            "name": "ორკაციანი საწოლი",
+            "slug": "orkaciani-sawoli",
+            "description": "საწოლი არის ორმაგი თავსახურით და ზოგადად ძალიან ორთოპედიული.",
+            "image": "",
+            "price": "670.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 4,
+        "fields": {
+            "name": "სამზარეულოს მაგიდა ნიჟარათი",
+            "slug": "samzareulos-magida-nijarati",
+            "description": "სამზარეულოს სასადილო მაგიდა ჩაშენებული ნიჟარათი და სკამებით.",
+            "image": "",
+            "price": "365.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 5,
+        "fields": {
+            "name": "სამზარეულოს მაგიდა ჩაშენებული",
+            "slug": "samzareulos-magida-chashenebuli",
+            "description": "სამზარეულოს მაგიდა ჩაშენებული ღუმელით და ნიჟარათი. ბევრი თარო და მთლიანობაში ლამაზი.",
+            "image": "",
+            "price": "430.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 5
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 6,
+        "fields": {
+            "name": "კუთხის დივანი მისაღები ოთახისთვის",
+            "slug": "kutxis-divani-misagebi-otaxistvis",
+            "description": "კუთხის დივანი, გარდაიქმნება ორადგილიან საწოლში, იდეალურია მისაღები და სტუმრების გასართობად!",
+            "image": "",
+            "price": "610.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 7,
+        "fields": {
+            "name": "საწოლის მაგიდა",
+            "slug": "sawolis-magida",
+            "description": "საწოლის მაგიდა ორი უჯრით (ყვავილი არ შედის კომფლეკტში).",
+            "image": "",
+            "price": "55.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 6
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 8,
+        "fields": {
+            "name": "ჩვეულებრივი დივანი",
+            "slug": "chveulebrivi-divani",
+            "description": "დივანი ჩვეულებრივი დივანია, აღსაწერი არაფერია.",
+            "image": "",
+            "price": "190.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 7
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 9,
+        "fields": {
+            "name": "საოფისე სკამი",
+            "slug": "saofise-skami",
+            "description": "ჩამომახრჩეთ ვინცხამ...",
+            "image": "",
+            "price": "30.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 8
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 10,
+        "fields": {
+            "name": "მცენარე",
+            "slug": "mcenare",
+            "description": "არ მოწიოთ!!",
+            "image": "",
+            "price": "10.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 11,
+        "fields": {
+            "name": "სტილიზებული ყვავილი",
+            "slug": "stilizebuli-yvavili",
+            "description": "დიზაინერი ყვავილი (შესაძლოა ხელოვნური) ინტერიერის გაფორმებისთვის.",
+            "image": "",
+            "price": "15.00",
+            "discount": "0.00",
+            "quantity": 10,
+            "category": 10
+        }
+    },
+    {
+        "model": "goods.products",
+        "pk": 12,
+        "fields": {
+            "name": "საწოლის მაგიდა 2",
+            "slug": "sawolis-magida-2",
+            "description": "მაგიდა საკმაოდ უცნაურია გარეგნულად, მაგრამ შესაფერისია საწოლის გვერდით დასაყენებლად.",
+            "image": "",
+            "price": "25.00",
+            "discount": "0.00",
+            "quantity": 5,
+            "category": 6
+        }
+    }
+]

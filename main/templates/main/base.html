@@ -59,7 +59,7 @@
                                 <li><a class="dropdown-item  text-white" href="carts/cart.html">კალათა</a></li>
                                 <li><a class="dropdown-item  text-white" href="users/profile.html">პირადი კაბინეტი</a>
                                 </li>
-                                <li><a class="dropdown-item  text-white" href="#">ადმინ მენიუ</a></li>
+                                <li><a class="dropdown-item  text-white" href="{% url "admin:index" %}">ადმინ მენიუ</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
@@ -88,13 +88,9 @@
                             height="16">
                     </button>
                     <ul class="dropdown-menu bg-dark" data-bs-theme="dark">
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">ყველა პროდუქტი</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">სამზარეულო</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">საძინებელი</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">Მისაღები ოთახი</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">ოფისი</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">აქსესუარები</a></li>
-                        <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">დეკორი</a></li>
+                        {% for category in categories %}                      
+                            <li><a class="dropdown-item text-white" href="{% url "catalog:index" %}">{{ category.name }}</a></li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <!-- კალათის ხატულა, ხსნის მოდალურ ფანჯარას -->

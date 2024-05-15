@@ -40,283 +40,33 @@
                 <button type="submit" class="btn btn-primary mx-3 mt-3">მიმართეთ</button>
             </form>
         </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/set of tea table and three chairs.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="../goods/product.html">
-                        <p class="card-title">ჩაის მაგიდა და სამი სკამი</p>
-                    </a>
-                    <p class="card-text text-truncate">სამი სკამის კომპლექტი და დიზაინერი მაგიდა მისაღები ოთახისთვის.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn add-to-cart">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
+        {% for product in goods %}
+            <!-- პროდუქტის ბარათი -->
+            <div class="col-lg-4 col-md-6 p-4">
+                <div class="card border-primary rounded custom-shadow">
+                    <img src="{% static product.image %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <a href="../goods/product.html">
+                            <p class="card-title">{{ product.name }}</p>
                         </a>
+                        <p class="card-text text-truncate">{{ product.description }}</p>
+                        <p class="product_id">id: 02265</p>
+                        <div class="d-flex justify-content-between">
+                            {% comment %}
+                            <p><s>100</s> $</p>
+                            <p><strong>90.00 $</strong></p>
+                            <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
+                            {% endcomment %}
+                            <p><strong>{{ product.price }} $</strong></p>
+                            <a href="#" class="btn add-to-cart">
+                                <img class="mx-1" src="{% static "deps/icons/cart-plus.svg" %}" alt="Catalog Icon"
+                                    width="32" height="32">
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/set of tea table and two chairs.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">ჩაის მაგიდა და ორი სკამი</p>
-                    </a>
-                    <p class="card-text text-truncate">მაგიდის და ორი სკამის კომპლექტი მინიმალისტურ სტილში.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn add-to-cart">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/double bed.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">ორკაციანი საწოლი</p>
-                    </a>
-                    <p class="card-text text-truncate">საწოლი არის ორმაგი თავსახურით და ზოგადად ძალიან ორთოპედიული.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/kitchen table.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">სამზარეულოს მაგიდა ნიჟარათი</p>
-                    </a>
-                    <p class="card-text text-truncate">სამზარეულოს სასადილო მაგიდა ჩაშენებული ნიჟარათი და სკამებით.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/kitchen table 2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">სამზარეულოს მაგიდა ჩაშენებული</p>
-                    </a>
-                    <p class="card-text text-truncate">სამზარეულოს მაგიდა ჩაშენებული ღუმელით და ნიჟარათი. ბევრი თარო და მთლიანობაში ლამაზი.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/corner sofa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">კუთხის დივანი მისაღები ოთახისთვის</p>
-                    </a>
-                    <p class="card-text text-truncate">კუთხის დივანი, გარდაიქმნება ორადგილიან საწოლში, იდეალურია მისაღები და სტუმრების გასართობად!</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/bedside table.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">საწოლის მაგიდა</p>
-                    </a>
-                    <p class="card-text text-truncate">საწოლის მაგიდა ორი უჯრით (ყვავილი არ შედის კომპლექტში).</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/sofa.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">ჩვეულებრივი დივანი</p>
-                    </a>
-                    <p class="card-text text-truncate">დივანი, რომელიც ასევე ცნობილია როგორც ჩვეულებრივი დივანი, აღსაწერი არაფერია.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/office chair.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">საოფისე სკამი</p>
-                    </a>
-                    <p class="card-text text-truncate">მაგარი სკამია მოკლედ</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/plants.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">მცენარე</p>
-                    </a>
-                    <p class="card-text text-truncate">თქვენი ინტერიერის გასაფორმებელი მცენარე გარემოს სიახლეს და სიმშვიდეს მისცემს.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/flower.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">სტილიზებული ყვავილი</p>
-                    </a>
-                    <p class="card-text text-truncate">დიზაინერი ყვავილი (შესაძლოა ხელოვნური) ინტერიერის გაფორმებისთვის.</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- პროდუქტის ბარათი -->
-        <div class="col-lg-4 col-md-6 p-4">
-            <div class="card border-primary rounded custom-shadow">
-                <img src="../deps/images/goods/strange table.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <a href="#">
-                        <p class="card-title">საწოლის მაგიდა</p>
-                    </a>
-                    <p class="card-text text-truncate">მაგიდა, გარეგნულად საკმაოდ უცნაური, მაგრამ შესაფერისია საწოლის გვერდით დასაყენებლად(დავიღალე ვიღაცამ მომკალით :/)).</p>
-                    <p class="product_id">id: 02265</p>
-                    <div class="d-flex justify-content-between">
-                        <p><s>100</s> $</p>
-                        <p><strong>90.00 $</strong></p>
-                        <span class="badge bg-warning text-dark">ფასდაკლება 10.00 %</span>
-                        <!-- <p><strong>100.00 $</strong></p> -->
-                        <a href="#" class="btn">
-                            <img class="mx-1" src="../deps/icons/cart-plus.svg" alt="Catalog Icon"
-                                width="32" height="32">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+            </div>   
+        {% endfor %}
     </div>
     <!-- პაგირება -->
     <nav aria-label="Page navigation example">
