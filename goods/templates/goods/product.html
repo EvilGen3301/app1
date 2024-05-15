@@ -1,0 +1,44 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block content%}
+    <div class="container mt-5">
+        <div class="card mb-4 custom-shadow">
+            <div class="row">
+                <!-- მინიატურები -->
+                <div class="col-md-4">
+                    <img src="../deps/images/goods/set of tea table and three chairs.jpg"
+                        class="img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                </div>
+                <div class="col-md-4 ">
+                    <p class="product_id mt-3">id: 002654</p>
+                </div>
+                <!-- სურათის გადიდება მოდალურ ფანჯარაში -->
+                <div class="modal fade" id="imageModal1" tabindex="-1"
+                    aria-labelledby="imageModal1Label" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="imageModal1Label">გამოსახულება 1</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="დახურვა"></button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="../deps/images/goods/set of tea table and three chairs.jpg"
+                                    class="img-fluid" alt="გამოსახულება 1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- პროდუქტის აღწერა -->
+            <div class="card-body">
+                <p class="card-text">ფასი: <strong>150.00 $</strong></p>
+                <h5 class="card-title">ჩაის მაგიდა და სამი სკამი</h5>
+                <p class="card-text">სამი სკამიანი კომპლექტი და დიზაინერი მაგიდა მისაღები ოთახისთვის
+                    ოთახები.</p>
+                <a href="#" class="btn btn-dark add-to-cart">კალათაში დამატება</a>
+            </div>
+        </div>
+    </div>
+{% endblock  %}
