@@ -3,11 +3,31 @@ from django.shortcuts import render
 
 def index(request):
     context: dict[str, str] = {
-        "title": "Home",
-        "content": "This is the home page"
+        "title": "Home - მთავარი",
+        "content": "მაღაზია HOME"
 }
 
     return render(request, 'main/index.html', context)
 
 def about(request):
-    return HttpResponse("About Page")
+    context: dict[str, str] = {
+        "title": "Home - ჩვენზე",
+        "content": "ჩვენზე",
+        "text_on_page": "ჩვენ მზად ვართ გავხადოთ თქვენი საცხოვრებელი ფართი მართლაც განსაკუთრებული."
+}
+
+    return render(request, 'main/about.html', context)
+
+def contact(request):
+    context: dict[str, str] = {
+        "content": "ნომერი: 555555555"
+}
+
+    return render(request, 'main/contact.html', context)
+
+def deliever(request):
+    context: dict[str, str] = {
+        "content": "მიტანის სერვისი"
+}
+
+    return render(request, 'main/deliever.html', context)
